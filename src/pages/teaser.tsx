@@ -9,8 +9,8 @@ export default function TeaserPage() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      router.push("/judge"); 
-    }, 7000);
+      router.push("/");
+    }, 3000);
 
     return () => clearTimeout(timeout);
   }, [router]);
@@ -24,7 +24,7 @@ export default function TeaserPage() {
         </p>
         <div className="space-x-4">
           <Link
-            href="/judge"
+            href="/judges"
             className="px-6 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700"
           >
             Judge Panel
