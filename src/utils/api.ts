@@ -1,9 +1,7 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE;
 import { Participant } from "@/types";
 
-
-
-// judges
+// Judges
 export async function fetchJudges() {
   const res = await fetch(`${API_BASE}/judges/`);
   return res.json();
@@ -18,10 +16,9 @@ export async function createJudge(data: { identifier: string; username: string; 
   return res.json();
 }
 
-
-// participants
+// Participants
 export async function getParticipants(): Promise<Participant[]> {
-  const res = await fetch(`${API_BASE}/participants`);
+  const res = await fetch(`${API_BASE}/participants/`);
   if (!res.ok) throw new Error("Failed to fetch participants");
   return res.json();
 }
@@ -35,4 +32,3 @@ export async function submitScore(participantId: string, score: number) {
   if (!res.ok) throw new Error("Failed to submit score");
   return res.json();
 }
-
