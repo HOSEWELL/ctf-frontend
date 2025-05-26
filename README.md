@@ -1,4 +1,4 @@
-# 🏆 Judge Scoring Panel - Hackathon Scoreboard
+# 🏆 Judge Scoring Panel 
 
 This is a web-based scoring platform where judges can view participants and assign scores. Built with **Next.js**, **Tailwind CSS**, and connected to a **Django REST API** backend.
 
