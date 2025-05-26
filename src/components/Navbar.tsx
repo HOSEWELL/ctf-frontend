@@ -11,7 +11,7 @@ export default function Navbar() {
           <Link href="/scoreboard" className="text-gray-600 text-lg hover:text-green-700 hover:underline">Home</Link>
           <Link href="/judge" className="text-gray-600 hover:text-green-700 text-lg hover:underline">Judge Panel</Link>
           <Link href="/participants" className="text-gray-600 hover:text-green-700 text-lg hover:underline">Participants</Link>
-          <Link href="/admin" className="text-white-600 hover:text-white-200 bg-green-700  p-3 rounded-xl ">Admin</Link>
+          <Link href="/admin" className="text-white-600 hover:text-white-200 bg-green-700 hover:bg-green-400  p-3 rounded-xl ">Admin</Link>
 
         </div>
       </div>
