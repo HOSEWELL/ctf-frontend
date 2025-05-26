@@ -22,7 +22,7 @@ export default function ParticipantPage() {
         const res = await fetch(`${API_BASE}/participants/`);
         const data = await res.json();
         setParticipants(data);
-      } catch (err) {
+      } catch {
         console.error("Failed to fetch participants");
       } finally {
         setLoading(false);

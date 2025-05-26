@@ -25,8 +25,8 @@ export default function JudgePage() {
         if (!res.ok) throw new Error('Failed to fetch participants');
         const data = await res.json();
         setParticipants(data);
-      } catch (err) {
-        console.error('Failed to fetch participants', err);
+      } catch  {
+        console.error('Failed to fetch participants');
       } finally {
         setLoading(false);
       }
