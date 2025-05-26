@@ -23,7 +23,7 @@ export default function ParticipantPage() {
         const data = await res.json();
         setParticipants(data);
       } catch (err) {
-        console.error("Failed to fetch participants", err);
+        console.error("Failed to fetch participants");
       } finally {
         setLoading(false);
       }
@@ -52,8 +52,8 @@ export default function ParticipantPage() {
       } else {
         console.error("Failed to add participant");
       }
-    } catch (err) {
-      console.error("Error adding participant", err);
+    } catch {
+      console.error("Error adding participant");
     }
   }
 
