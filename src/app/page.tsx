@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import TeaserPage from "../app/teaser/page";
 
 export default function Page() {

@@ -28,8 +28,8 @@ export default function JudgesPage() {
       const res = await fetch(`${BASE_URL}/judges/`);
       const data = await res.json();
       setJudges(data);
-    } catch (err) {
-      console.error("Failed to fetch judges:", err);
+    } catch {
+      console.error("Failed to fetch judges:");
     } finally {
       setLoading(false);
     }
@@ -60,7 +60,7 @@ export default function JudgesPage() {
       setShowModal(false);
       setFormData({ identifier: "", username: "", display_name: "" });
       fetchJudges();
-    } catch (err) {
+    } catch {
       alert("Error adding judge");
     }
   };
